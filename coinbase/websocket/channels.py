@@ -5,6 +5,7 @@ from coinbase.constants import (
     FUTURES_BALANCE_SUMMARY,
     HEARTBEATS,
     LEVEL2,
+    LEVEL2_BATCH,
     MARKET_TRADES,
     STATUS,
     TICKER,
@@ -546,6 +547,81 @@ async def level2_unsubscribe_async(self, product_ids: List[str]) -> None:
     """
     await self.unsubscribe_async(product_ids, [LEVEL2])
 
+
+def level2_batch(self, product_ids: List[str]) -> None:
+    """
+    **Level2 Batch Subscribe**
+    ____________________
+
+    __________
+
+    **Description:**
+
+    Subscribe to level2 batch channel for a list of products_ids.
+
+    __________
+
+    **Read more on the official documentation:** `Level2 Channel
+    <https://docs.cdp.coinbase.com/advanced-trade/docs/ws-channels#level2-channel>`_
+    """
+    self.subscribe(product_ids, [LEVEL2_BATCH])
+
+
+async def level2_batch_async(self, product_ids: List[str]) -> None:
+    """
+    **Level2 Batch Subscribe Async**
+    __________________________
+
+    __________
+
+    **Description:**
+
+    Async subscribe to level2 batch channel for a list of products_ids.
+
+    __________
+
+    **Read more on the official documentation:** `Level2 Channel
+    <https://docs.cdp.coinbase.com/advanced-trade/docs/ws-channels#level2-channel>`_
+    """
+    await self.subscribe_async(product_ids, [LEVEL2_BATCH])
+
+
+def level2_batch_unsubscribe(self, product_ids: List[str]) -> None:
+    """
+    **Level2 Batch Unsubscribe**
+    ______________________
+
+    __________
+
+    **Description:**
+
+    Unsubscribe to level2 batch channel for a list of products_ids.
+
+    __________
+
+    **Read more on the official documentation:** `Level2 Channel
+    <https://docs.cdp.coinbase.com/advanced-trade/docs/ws-channels#level2-channel>`_
+    """
+    self.unsubscribe(product_ids, [LEVEL2_BATCH])
+
+
+async def level2_batch_unsubscribe_async(self, product_ids: List[str]) -> None:
+    """
+    **Level2 Batch Unsubscribe Async**
+    ____________________________
+
+    __________
+
+    **Description:**
+
+    Async unsubscribe to level2 batch channel for a list of products_ids.
+
+    __________
+
+    **Read more on the official documentation:** `Level2 Channel
+    <https://docs.cdp.coinbase.com/advanced-trade/docs/ws-channels#level2-channel>`_
+    """
+    await self.unsubscribe_async(product_ids, [LEVEL2_BATCH])
 
 def user(self, product_ids: List[str]) -> None:
     """

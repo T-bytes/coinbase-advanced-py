@@ -56,6 +56,10 @@ Channels
 .. autofunction:: coinbase.websocket.WSClient.level2_async
 .. autofunction:: coinbase.websocket.WSClient.level2_unsubscribe
 .. autofunction:: coinbase.websocket.WSClient.level2_unsubscribe_async
+.. autofunction:: coinbase.websocket.WSClient.level2_batch
+.. autofunction:: coinbase.websocket.WSClient.level2_batch_async
+.. autofunction:: coinbase.websocket.WSClient.level2_batch_unsubscribe
+.. autofunction:: coinbase.websocket.WSClient.level2_batch_unsubscribe_async
 .. autofunction:: coinbase.websocket.WSClient.user
 .. autofunction:: coinbase.websocket.WSClient.user_async
 .. autofunction:: coinbase.websocket.WSClient.user_unsubscribe

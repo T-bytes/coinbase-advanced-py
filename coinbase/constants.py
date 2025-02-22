@@ -28,6 +28,7 @@ STATUS = "status"
 TICKER = "ticker"
 TICKER_BATCH = "ticker_batch"
 LEVEL2 = "level2"
+LEVEL2_BATCH = "level2_batch"
 USER = "user"
 FUTURES_BALANCE_SUMMARY = "futures_balance_summary"
 
